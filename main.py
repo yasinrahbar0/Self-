@@ -8,7 +8,9 @@ from telethon.sessions import StringSession
 # ========= ENV =========
 API_ID = int(os.environ["API_ID"])
 API_HASH = os.environ["API_HASH"]
-SESSION_STRING = os.environ["SESSION_STRING"]
+
+# ⬇️ FIX اصلی اینجاست
+SESSION_STRING = os.environ["SESSION_STRING"].strip()
 
 # ========= Telegram =========
 client = TelegramClient(
@@ -83,7 +85,7 @@ async def style_text(event):
 # ========= Main =========
 async def main():
     await client.start()
-    print("Self-bot started")
+    print("Self-bot started ✅")
     await client.run_until_disconnected()
 
 if __name__ == "__main__":
