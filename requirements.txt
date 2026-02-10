@@ -1,3 +1,2 @@
-imghdr
 telethon==1.29.0
 flask
