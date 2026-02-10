@@ -1,2 +1,2 @@
-telethon==1.29.0
+telethon
 flask
